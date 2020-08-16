@@ -1,0 +1,479 @@
+cypress\integration\stackExchangeAPI.js:
+    validate should return data for recipients
+        cy:request (K): GET https://api.stackexchange.com/2.2/badges/recipients?site=stackoverflow
+                        Status: 200
+                        Response body: {
+                          "items": [
+                            {
+                              "user": {
+                                "reputation": 974550,
+                                "user_id": 6309,
+                                "user_type": "registered",
+                                "accept_rate": 100,
+                                "profile_image": "https://www.gravatar.com/avatar/7aa22372b695ed2b26052c340f9097eb?s=128&d=identicon&r=PG",
+                                "display_name": "VonC",
+                                "link": "https://stackoverflow.com/users/6309/vonc"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 260,
+                              "link": "https://stackoverflow.com/badges/260/announcer",
+                              "name": "Announcer"
+                            },
+                            {
+                              "user": {
+                                "reputation": 3,
+                                "user_id": 13982967,
+                                "user_type": "registered",
+                                "profile_image": "https://i.stack.imgur.com/Dj7wd.jpg?s=128&g=1",
+                                "display_name": "gozdekurtulmus",
+                                "link": "https://stackoverflow.com/users/13982967/gozdekurtulmus"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 9,
+                              "link": "https://stackoverflow.com/badges/9/autobiographer",
+                              "name": "Autobiographer"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1,
+                                "user_id": 14112330,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/93b04001e83a7d8a9f1333774c5d4ba4?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "uday kiran",
+                                "link": "https://stackoverflow.com/users/14112330/uday-kiran"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 3,
+                              "link": "https://stackoverflow.com/badges/3/editor",
+                              "name": "Editor"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1,
+                                "user_id": 13958719,
+                                "user_type": "registered",
+                                "profile_image": "https://lh3.googleusercontent.com/a-/AOh14GgwBl8QADMsuOLD1gGuyndmon5ekMmwgzqeOTUA=k-s128",
+                                "display_name": "piePatch",
+                                "link": "https://stackoverflow.com/users/13958719/piepatch"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 3,
+                              "link": "https://stackoverflow.com/badges/3/editor",
+                              "name": "Editor"
+                            },
+                            {
+                              "user": {
+                                "reputation": 143,
+                                "user_id": 3244360,
+                                "user_type": "registered",
+                                "profile_image": "https://i.stack.imgur.com/KcSJ7.jpg?s=128&g=1",
+                                "display_name": "Rameshwar Trivedi",
+                                "link": "https://stackoverflow.com/users/3244360/rameshwar-trivedi"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 3,
+                              "link": "https://stackoverflow.com/badges/3/editor",
+                              "name": "Editor"
+                            },
+                            {
+                              "user": {
+                                "reputation": 23,
+                                "user_id": 14069909,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/79cd5e813536ae2f5eb7f4f0f4fee713?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "Ohhimarccc",
+                                "link": "https://stackoverflow.com/users/14069909/ohhimarccc"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 3,
+                              "link": "https://stackoverflow.com/badges/3/editor",
+                              "name": "Editor"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1,
+                                "user_id": 6788313,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/9189cb608eb5b67b56d406dad419c23b?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "Pythonlearner",
+                                "link": "https://stackoverflow.com/users/6788313/pythonlearner"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 3,
+                              "link": "https://stackoverflow.com/badges/3/editor",
+                              "name": "Editor"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1,
+                                "user_id": 14111681,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/99931ca9fc741d6b77e971b87ef96070?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "Jyoti",
+                                "link": "https://stackoverflow.com/users/14111681/jyoti"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 3,
+                              "link": "https://stackoverflow.com/badges/3/editor",
+                              "name": "Editor"
+                            },
+                            {
+                              "user": {
+                                "reputation": 7,
+                                "user_id": 12103175,
+                                "user_type": "registered",
+                                "profile_image": "https://lh4.googleusercontent.com/-6ZJtIwU54J4/AAAAAAAAAAI/AAAAAAAAAG8/cDk_CldNuKo/photo.jpg?sz=128",
+                                "display_name": "Abhirami anbu",
+                                "link": "https://stackoverflow.com/users/12103175/abhirami-anbu"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 3,
+                              "link": "https://stackoverflow.com/badges/3/editor",
+                              "name": "Editor"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1,
+                                "user_id": 13025034,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/65deae919625534cbf80b88a06f3c303?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "tom4s",
+                                "link": "https://stackoverflow.com/users/13025034/tom4s"
+                              },
+                              "badge_type": "named",
+                              "rank": "silver",
+                              "badge_id": 71,
+                              "link": "https://stackoverflow.com/badges/71/enthusiast",
+                              "name": "Enthusiast"
+                            },
+                            {
+                              "user": {
+                                "reputation": 59,
+                                "user_id": 9717212,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/20763b7e71df11c0b55bcc3759e8e92f?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "Phillipp Schwarz",
+                                "link": "https://stackoverflow.com/users/9717212/phillipp-schwarz"
+                              },
+                              "badge_type": "named",
+                              "rank": "silver",
+                              "badge_id": 71,
+                              "link": "https://stackoverflow.com/badges/71/enthusiast",
+                              "name": "Enthusiast"
+                            },
+                            {
+                              "user": {
+                                "reputation": 707,
+                                "user_id": 9319588,
+                                "user_type": "registered",
+                                "profile_image": "https://lh5.googleusercontent.com/-nucMmzLW4a0/AAAAAAAAAAI/AAAAAAAABO8/8cOyCmUB_OU/photo.jpg?sz=128",
+                                "display_name": "Cerlancism",
+                                "link": "https://stackoverflow.com/users/9319588/cerlancism"
+                              },
+                              "badge_type": "named",
+                              "rank": "gold",
+                              "badge_id": 28,
+                              "link": "https://stackoverflow.com/badges/28/famous-question",
+                              "name": "Famous Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 410,
+                                "user_id": 12613647,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/820164cf0d05c8c76723dd8688711ab8?s=128&d=identicon&r=PG",
+                                "display_name": "Anic17",
+                                "link": "https://stackoverflow.com/users/12613647/anic17"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 38,
+                              "link": "https://stackoverflow.com/badges/38/peer-pressure",
+                              "name": "Peer Pressure"
+                            },
+                            {
+                              "user": {
+                                "reputation": 143,
+                                "user_id": 7643250,
+                                "user_type": "registered",
+                                "profile_image": "https://lh6.googleusercontent.com/-PFjuY19DFxc/AAAAAAAAAAI/AAAAAAAAABs/1cgDN6g2Q0k/photo.jpg?sz=128",
+                                "display_name": "Von",
+                                "link": "https://stackoverflow.com/users/7643250/von"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 234,
+                                "user_id": 4399743,
+                                "user_type": "registered",
+                                "accept_rate": 65,
+                                "profile_image": "https://www.gravatar.com/avatar/754a4f62e6bda55a862b26ced4f5e6c2?s=128&d=identicon&r=PG",
+                                "display_name": "Kallol",
+                                "link": "https://stackoverflow.com/users/4399743/kallol"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 676,
+                                "user_id": 4189495,
+                                "user_type": "registered",
+                                "accept_rate": 83,
+                                "profile_image": "https://www.gravatar.com/avatar/32b41ca437465cea70c1c02aebeafaa1?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "Tony_89",
+                                "link": "https://stackoverflow.com/users/4189495/tony-89"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1733,
+                                "user_id": 2104638,
+                                "user_type": "registered",
+                                "accept_rate": 47,
+                                "profile_image": "https://i.stack.imgur.com/1aDHO.jpg?s=128&g=1",
+                                "display_name": "Pasupathi Rajamanickam",
+                                "link": "https://stackoverflow.com/users/2104638/pasupathi-rajamanickam"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 564,
+                                "user_id": 9431874,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/774d36fdfa1a3a95208acd3c5d8a55a5?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "NL23codes",
+                                "link": "https://stackoverflow.com/users/9431874/nl23codes"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 105,
+                                "user_id": 7185861,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/ab54a3a39a55388f4c12a578eb5be01a?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "cao xiangyu",
+                                "link": "https://stackoverflow.com/users/7185861/cao-xiangyu"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1890,
+                                "user_id": 6820170,
+                                "user_type": "registered",
+                                "accept_rate": 60,
+                                "profile_image": "https://www.gravatar.com/avatar/d2af840ea3d5ac271ed2ee2552be340f?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "ExocetKid",
+                                "link": "https://stackoverflow.com/users/6820170/exocetkid"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 132,
+                                "user_id": 8032076,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/0abea048d90afb6d3702d4127361fb07?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "mehlichmeyer",
+                                "link": "https://stackoverflow.com/users/8032076/mehlichmeyer"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 11,
+                                "user_id": 11098107,
+                                "user_type": "registered",
+                                "profile_image": "https://lh3.googleusercontent.com/-SV_rzERzg4k/AAAAAAAAAAI/AAAAAAAAAAA/ACevoQPpQb_SjMS4lOeNtu6ic6G3zylpcg/mo/photo.jpg?sz=128",
+                                "display_name": "aaron",
+                                "link": "https://stackoverflow.com/users/11098107/aaron"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 21,
+                                "user_id": 13151702,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/023b59fe90870f093d8c9b3bdc7be6c2?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "ivanColucci",
+                                "link": "https://stackoverflow.com/users/13151702/ivancolucci"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 26,
+                              "link": "https://stackoverflow.com/badges/26/popular-question",
+                              "name": "Popular Question"
+                            },
+                            {
+                              "user": {
+                                "reputation": 23,
+                                "user_id": 2422217,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/bab2998e1ad1242a2a0fcbec6485598a?s=128&d=identicon&r=PG",
+                                "display_name": "awrush",
+                                "link": "https://stackoverflow.com/users/2422217/awrush"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 10,
+                              "link": "https://stackoverflow.com/badges/10/scholar",
+                              "name": "Scholar"
+                            },
+                            {
+                              "user": {
+                                "reputation": 3,
+                                "user_id": 14108929,
+                                "user_type": "registered",
+                                "profile_image": "https://www.gravatar.com/avatar/30680487a668515a1d5d5d69591d32e3?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "zzzzou",
+                                "link": "https://stackoverflow.com/users/14108929/zzzzou"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 10,
+                              "link": "https://stackoverflow.com/badges/10/scholar",
+                              "name": "Scholar"
+                            },
+                            {
+                              "user": {
+                                "reputation": 127,
+                                "user_id": 13028060,
+                                "user_type": "registered",
+                                "profile_image": "https://lh3.googleusercontent.com/a-/AOh14Gi7bSeCraUDWN7r1AxitmC7ybYfuEYYem1CMblF0w=k-s128",
+                                "display_name": "Tomergt45",
+                                "link": "https://stackoverflow.com/users/13028060/tomergt45"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 1,
+                              "link": "https://stackoverflow.com/badges/1/teacher",
+                              "name": "Teacher"
+                            },
+                            {
+                              "user": {
+                                "reputation": 1949,
+                                "user_id": 5740428,
+                                "user_type": "registered",
+                                "accept_rate": 64,
+                                "profile_image": "https://www.gravatar.com/avatar/955c329acc7388992f247b0b64c4e270?s=128&d=identicon&r=PG&f=1",
+                                "display_name": "J. Schultke",
+                                "link": "https://stackoverflow.com/users/5740428/j-schultke"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 1108,
+                              "link": "https://stackoverflow.com/badges/1108/vox-populi",
+                              "name": "Vox Populi"
+                            },
+                            {
+                              "user": {
+                                "reputation": 105,
+                                "user_id": 13926589,
+                                "user_type": "registered",
+                                "profile_image": "https://lh4.googleusercontent.com/-j2fjkdEBezQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclfR9xiIQ7GiZKup5u-ZVaa_lgjSg/photo.jpg?sz=128",
+                                "display_name": "MTay",
+                                "link": "https://stackoverflow.com/users/13926589/mtay"
+                              },
+                              "badge_type": "named",
+                              "rank": "bronze",
+                              "badge_id": 1108,
+                              "link": "https://stackoverflow.com/badges/1108/vox-populi",
+                              "name": "Vox Populi"
+                            },
+                            {
+                              "user": {
+                                "reputation": 5885,
+                                "user_id": 421642,
+                                "user_type": "registered",
+                                "accept_rate": 77,
+                                "profile_image": "https://i.stack.imgur.com/xIByD.jpg?s=128&g=1",
+                                "display_name": "OhadR",
+                                "link": "https://stackoverflow.com/users/421642/ohadr"
+                              },
+                              "badge_type": "named",
+                              "rank": "silver",
+                              "badge_id": 13,
+                              "link": "https://stackoverflow.com/badges/13/yearling",
+                              "name": "Yearling"
+                            },
+                            {
+                              "user": {
+                                "reputation": 2325,
+                                "user_id": 1603018,
+                                "user_type": "registered",
+                                "accept_rate": 82,
+                                "profile_image": "https://i.stack.imgur.com/QTNmD.jpg?s=128&g=1",
+                                "display_name": "Rodders",
+                                "link": "https://stackoverflow.com/users/1603018/rodders"
+                              },
+                              "badge_type": "named",
+                              "rank": "silver",
+                              "badge_id": 13,
+                              "link": "https://stackoverflow.com/badges/13/yearling",
+                              "name": "Yearling"
+                            }
+                          ],
+                          "has_more": true,
+                          "quota_max": 300,
+                          "quota_remaining": 174
+                        }
+        cy:command (K): get	@response
+        cy:command (K): assert	Verify has status: expected **200** to equal **200**
+        cy:command (K): get	@response
+        cy:command (K): assert	Verify Body has value: expected **{ Object (items, has_more, ...) }** to exist
+        cy:command (K): get	@response
+        cy:command (K): assert	Verify has value for property: expected **{ Object (user, badge_type, ...) }** to have deep property **name**
+        cy:command (X): assert	Verify has value for property: expected **{ Object (user, badge_type, ...) }** to have deep property **name** of **Informed**, but got **Announcer**
+
+
+
