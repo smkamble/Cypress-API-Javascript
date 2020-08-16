@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-08-16T10:59:03.864Z",
+    "end": "2020-08-16T10:59:09.772Z",
+    "duration": 5908,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8069f2c1-d6ba-403c-b013-4367a3c0e84a",
+      "title": "",
+      "fullFile": "cypress\\integration\\stackExchangeAPI.js",
+      "file": "cypress\\integration\\stackExchangeAPI.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bc61f1e4-1326-4868-a42d-efadb4d42172",
+          "title": "API Testing for StackExchange",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "validate should return data for tag",
+              "fullTitle": "API Testing for StackExchange validate should return data for tag",
+              "timedOut": null,
+              "duration": 2155,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GETTagAPI); //Then\ncy.verifyResponseStatus(200);\ncy.verifyHasBody();\ncy.verifyHasPropertyValue(\"name\", \"javascript\");",
+              "err": {},
+              "uuid": "13c84901-cc4a-4b50-82ae-7eda70266c82",
+              "parentUUID": "bc61f1e4-1326-4868-a42d-efadb4d42172",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate should return data for recipients",
+              "fullTitle": "API Testing for StackExchange validate should return data for recipients",
+              "timedOut": null,
+              "duration": 472,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GetRecipientsAPI); //Then\ncy.verifyResponseStatus(200);\ncy.verifyHasBody();\ncy.verifyHasPropertyValue(\"name\", \"Informed\");",
+              "err": {},
+              "uuid": "d217b4c9-25ed-479e-aea7-024a43f8ee85",
+              "parentUUID": "bc61f1e4-1326-4868-a42d-efadb4d42172",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate should return data for id",
+              "fullTitle": "API Testing for StackExchange validate should return data for id",
+              "timedOut": null,
+              "duration": 2674,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GetIdAPI, 1); //Then\ncy.verifyResponseStatus(200);\ncy.verifyHasBody();\ncy.verifyHasPropertyValue(\"badge_id\", 1);",
+              "err": {},
+              "uuid": "28d38776-f3fc-49db-a964-f265b0958a02",
+              "parentUUID": "bc61f1e4-1326-4868-a42d-efadb4d42172",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate should fail return data for invalid id",
+              "fullTitle": "API Testing for StackExchange validate should fail return data for invalid id",
+              "timedOut": null,
+              "duration": 476,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GetIdAPI, 345345435345345); //Then\ncy.verifyResponseStatus(400);\ncy.verifyHasBody();\ncy.verifyHasErrorMessage(\"error_name\", \"bad_parameter\");",
+              "err": {},
+              "uuid": "9623fc6f-6038-4f94-927a-709f4c30a304",
+              "parentUUID": "bc61f1e4-1326-4868-a42d-efadb4d42172",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "13c84901-cc4a-4b50-82ae-7eda70266c82",
+            "d217b4c9-25ed-479e-aea7-024a43f8ee85",
+            "28d38776-f3fc-49db-a964-f265b0958a02",
+            "9623fc6f-6038-4f94-927a-709f4c30a304"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5777,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

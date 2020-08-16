@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-08-16T11:05:55.554Z",
+    "end": "2020-08-16T11:05:59.591Z",
+    "duration": 4037,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5a76468a-faa2-4539-a7b6-b2c04ed99a78",
+      "title": "",
+      "fullFile": "cypress\\integration\\stackExchangeAPI.js",
+      "file": "cypress\\integration\\stackExchangeAPI.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c5883c98-e405-458f-9580-8c2a14fceeb9",
+          "title": "API Testing for StackExchange",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "validate should return data for tag",
+              "fullTitle": "API Testing for StackExchange validate should return data for tag",
+              "timedOut": null,
+              "duration": 2167,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GETTagAPI); //Then\ncy.verifyResponseStatus(200);\ncy.verifyHasBody();\ncy.verifyHasPropertyValue(\"name\", \"javascript\");",
+              "err": {},
+              "uuid": "4a785eef-9fb5-4226-8de3-97aeb107ddfc",
+              "parentUUID": "c5883c98-e405-458f-9580-8c2a14fceeb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate should return data for recipients",
+              "fullTitle": "API Testing for StackExchange validate should return data for recipients",
+              "timedOut": null,
+              "duration": 790,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GetRecipientsAPI); //Then\ncy.verifyResponseStatus(200);\ncy.verifyHasBody();\ncy.verifyHasPropertyValue(\"name\", \"Informed\");",
+              "err": {
+                "message": "AssertionError: Verify has value for property: expected { Object (user, badge_type, ...) } to have deep property 'name' of 'Informed', but got 'Announcer'",
+                "estack": "AssertionError: Verify has value for property: expected { Object (user, badge_type, ...) } to have deep property 'name' of 'Informed', but got 'Announcer'\n    at Context.eval (http://localhost:53192/__cypress/tests?p=cypress\\support\\index.js:40:49)",
+                "diff": "- 'Announcer'\n+ 'Informed'\n"
+              },
+              "uuid": "d0966f43-529c-40d7-acf0-cb66e7b06740",
+              "parentUUID": "c5883c98-e405-458f-9580-8c2a14fceeb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate should return data for id",
+              "fullTitle": "API Testing for StackExchange validate should return data for id",
+              "timedOut": null,
+              "duration": 439,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GetIdAPI, 1); //Then\ncy.verifyResponseStatus(200);\ncy.verifyHasBody();\ncy.verifyHasPropertyValue(\"badge_id\", 1);",
+              "err": {},
+              "uuid": "5370c587-6a20-4ae8-96ee-45dfe3370137",
+              "parentUUID": "c5883c98-e405-458f-9580-8c2a14fceeb9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate should fail return data for invalid id",
+              "fullTitle": "API Testing for StackExchange validate should fail return data for invalid id",
+              "timedOut": null,
+              "duration": 466,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Given\ncy.getAPIRequest(apiData.StackExchangeData.GetIdAPI, 345345435345345); //Then\ncy.verifyResponseStatus(400);\ncy.verifyHasBody();\ncy.verifyHasErrorMessage(\"error_name\", \"bad_parameter\");",
+              "err": {},
+              "uuid": "1333fad5-2f0b-459c-bdf7-444336573d8a",
+              "parentUUID": "c5883c98-e405-458f-9580-8c2a14fceeb9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4a785eef-9fb5-4226-8de3-97aeb107ddfc",
+            "5370c587-6a20-4ae8-96ee-45dfe3370137",
+            "1333fad5-2f0b-459c-bdf7-444336573d8a"
+          ],
+          "failures": [
+            "d0966f43-529c-40d7-acf0-cb66e7b06740"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3862,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "defaultCommandTimeout": 6000,
+    "pageLoadTimeout": 180000,
+    "chromeWebSecurity": true,
+    "screenshotsFolder": "cypress/screenshots",
+    "videosFolder": "cypress/videos",
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "env": {
+      "baseurl": "https://api.stackexchange.com/2.2/"
+    },
+    "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+    "reporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "overwrite": true,
+      "html": true,
+      "json": false
+    }
+}  

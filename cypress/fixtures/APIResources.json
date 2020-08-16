@@ -1,0 +1,7 @@
+{
+    "StackExchangeData": {
+        "GETTagAPI": "tags?order=desc&sort=popular&site=stackoverflow",
+        "GetRecipientsAPI": "badges/recipients?site=stackoverflow",
+        "GetIdAPI": "users/parameter/badges?order=desc&sort=rank&site=stackoverflow"
+    }
+}
