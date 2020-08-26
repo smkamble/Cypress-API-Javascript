@@ -9,7 +9,7 @@ Cypress.Commands.add("getAPIRequest", (url, parameter) => {
     return cy.request({
         method: 'GET',
         url: Cypress.env('baseurl') + url,
-        followRedirect: false,
+        //followRedirect: false,
         failOnStatusCode: false,
         headers: {
             'accept': 'application/json'

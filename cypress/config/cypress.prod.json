@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://google.co.in",
+    "env": {
+      "something": "prod"
+    }
+  }

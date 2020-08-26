@@ -14,6 +14,15 @@
 /**
  * @type {Cypress.PluginConfig}
  */
+// promisified fs module
+const fs = require('fs-extra')
+const path = require('path')
+
+function getConfigurationByFile(file) {
+  const pathToConfigFile = path.resolve('.', '\cypress\\config', `cypress.${file}.json`)
+  return fs.readJson(pathToConfigFile)
+}
+
 module.exports = (on, config) => {
   const options = {
     printLogs: 'always',
@@ -23,4 +32,8 @@ module.exports = (on, config) => {
     }
   };
   require('cypress-terminal-report/src/installLogsPrinter')(on, options);
+
+  // accept a configFile value or use development by default
+  const file = config.env.configFile || 'qa'
+  return getConfigurationByFile(file)
 }

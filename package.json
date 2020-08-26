@@ -9,6 +9,8 @@
     "generate-report": "marge cypress/mochareports/report.json -f report -o cypress/mochareports",
     "posttest": "npm run combine-reports && npm run generate-report",
     "test": "npx cypress run && npm run posttest",
+    "run:qa": "npx cypress run --env configFile=qa --browser chrome --spec 'cypress/integration/environmentTest.js' && npm run posttest",
+    "run:prod": "npx cypress run --env configFile=prod --browser chrome --spec 'cypress/integration/environmentTest.js' && npm run posttest",
     "open": "npx cypress open"
   },
   "keywords": [
