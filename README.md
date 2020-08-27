@@ -48,3 +48,4 @@ NodeJS installed and setup(To download Cypress and its dependencies)
 ```
 ### How to Run Test
 * Go to Project root directory and Run complete Test Suite: `npm run test`
+* If want to run on QA environment the run command 'npm run run:qa' 
